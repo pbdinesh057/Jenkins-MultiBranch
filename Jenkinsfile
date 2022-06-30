@@ -2,10 +2,10 @@ pipeline {
     agent any
     stages {
         stage('Dev AWS') {
-            steps {
-                withAWS(credentials: 'prod-aws-credentials', region: 'us-east-1') {
-                    sh 'aws s3 ls'
-                }
+            steps {              
+                withCredentials([<object of type com.cloudbees.jenkins.plugins.awscredentials.AmazonWebServicesCredentialsBinding>]){
+                sh 'aws s3 ls'
+            }
             }
         }
     }
