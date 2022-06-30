@@ -1,1 +1,12 @@
 ################### MULTIBRANCH PIPELINE ###################
+
+https://devopscube.com/jenkins-multibranch-pipeline-tutorial/
+
+https://www.lambdatest.com/blog/how-to-create-jenkins-multibranch-pipeline/
+
+- A multi-branch pipeline is a concept of automatically creating Jenkins pipelines based on Git branches. It can automatically discover new branches in the source control (Github) and automatically create a pipeline for that branch. When the pipeline build starts, Jenkins uses the Jenkinsfile in that branch for build stages. 
+
+- You can add conditional logic to the Jenkinsfile to build jobs based on the branch requirement.
+
+
+- SCENARIO - Took 3 AWS Accounts - Depending on branch DEV/UAT/PROD - the particular jenkins pipeline should start and deploy resourses accordingly
