@@ -10,3 +10,7 @@ https://www.lambdatest.com/blog/how-to-create-jenkins-multibranch-pipeline/
 
 
 - SCENARIO - Took 3 AWS Accounts - Depending on branch DEV/UAT/PROD - the particular jenkins pipeline should start and deploy resourses accordingly
+
+1. In GitHub - under profile - settings - developer settings - personal access tokens - create tokens
+2. In Jenkins - Install (Blue-Ocean) plugin - open jenking thru blueOcean option on left side options - New pipeline - Multibranch - paste token and select our repo there - add webhook for our repo - New commits in different branches will run as seperate pipelines.
+
